@@ -56,9 +56,6 @@ func main() {
 	defaultMountFlags := unix.MS_NOEXEC | unix.MS_NOSUID | unix.MS_NODEV
 
 	var devices []*devices.Rule
-	// for _, device := range specconv.AllowedDevices {
-	// 	devices = append(device, &device.Rule)
-	// }
 
 	config := &configs.Config{
 		Rootfs: abs + "/rootfs",
